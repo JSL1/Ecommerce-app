@@ -1,0 +1,36 @@
+body {
+  background-image: url('../public/newyork.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  margin-top: 4rem;
+}
+
+#product-view {
+  margin: 0px auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer {
+  position:relative;
+  bottom: 0px;
+  background-color: #fff1eb; /* */
+}
+
+header {
+  height: 4rem;
+  background-color: #ace0f9;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
