@@ -1,0 +1,117 @@
+#product-page {
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f5f5;
+    margin: 6rem auto;
+    width: 60vw;
+    height: 80vh;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+#product-page-img-selector {
+    display: flex;
+    flex-direction: row;
+    margin: 4px;
+}
+
+.selector-img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #111111;
+    margin-right: 8px;
+}
+.selector-img:hover {
+    cursor: pointer;
+}
+
+.product-page-img {
+    height: 465px;
+    width: 465px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    left: -3.5rem;
+    top: 4rem;
+    background-color: #f5f5f5;
+    border-radius: 6px 
+}
+
+.product-page-img img {
+    display: flex;
+    border-radius: 6px;
+    height: 100%;
+    width: auto;
+}
+
+#product-page-body {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.product-page-h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.product-page-h2 {
+    font-size: 24px;
+    display: block;
+}
+
+.product-page-h3 {
+    font-size: 16px;
+    color: #CCCCCC;
+}
+
+.product-page-buy {
+    display: flex;
+    flex-direction: column;
+}
+.product-page-buy div {
+    display: flex;
+    flex-direction: row;
+}
+.increment-decrement {
+    border-radius: 50%;
+    padding: 8px;
+    border: 0px;
+    background-color: #DF8E78;
+    box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
+}
+
+.add-button {
+    width: 25%;
+    line-height: 1.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+    background-color: #66F1D1;
+    border: 0px;
+    box-shadow: 4px 4px 10px -2px rgba(0, 0, 0, 0.3);
+    color: #111111;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.buy-button {
+    width: 25%;
+    line-height: 1.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    border: 0px;
+    background-color: #A5F278;
+    color: #111111;
+    font-weight: bold;
+    box-shadow: 4px 4px 10px -2px rgba(0, 0, 0, 0.3);
+}
+.buy-button:hover {
+    
+}

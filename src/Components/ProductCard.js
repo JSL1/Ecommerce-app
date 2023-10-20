@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import '../css/product-card.css';
+import {Link, useNavigate} from 'react-router-dom';
+import products from "../Data/productsList";
 
 const ProductCard = (props) => {
     const product = props.product;
@@ -12,7 +14,7 @@ const ProductCard = (props) => {
                 <div className='product-body'>
                     <div className="product-name">
                         <span className="product-h1">
-                            {product.name}                        
+                            <Link to={'../product/' + products.indexOf(product)}>{product.name}</Link>             
                         </span>
                         <span className="product-h2">
                             {product.manufacturer}
