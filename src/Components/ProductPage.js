@@ -6,11 +6,14 @@ import '../css/product-page.css';
 import uniqid from 'uniqid';
 import Header from './Header';
 import Footer from "./Footer";
+import { add, remove } from "../redux/cart";
+import { useDispatch, useSelector } from "react-redux";
 
 const ProductPage = (props) => {
+    const { contents, total } = useSelector((state) => state.cart);
+    const dispatch = useDispatch();
 
     const [quantity, setQuantity] = useState(1);
-
     const [id, setId] = useState(useParams().id);
 
     const getProduct = () => {
@@ -47,14 +50,20 @@ const ProductPage = (props) => {
         }
     }
 
+    const addToCart = () => {
+        dispatch(add(getProduct()));
+        console.log(contents);
+    }
+
     useEffect(() => {
         console.log(product);
-    }, [product]);
+        console.log(contents);
+    }, [product, contents]);
 
     return (
         <>
         <Header />
-        <main>
+        <main className="page">
             <section id="product-page">
                 <div className="product-page-img">
                     <img src={currentImage} alt={product.name + ', ' + product.description} />
@@ -99,7 +108,9 @@ const ProductPage = (props) => {
                             </button>
                         </div>
                         <div>
-                            <button className="add-button">Add to cart</button>
+                            <button className="add-button" 
+                                onClick={addToCart}>
+                                Add to cart</button>
                             <button className="buy-button">Buy it now</button>
                         </div>
                     </div>

@@ -6,6 +6,7 @@ import ProductPage from './Components/ProductPage';
 import Cart from './Components/Cart';
 import Homepage from './Components/Homepage';
 import Header from './Components/Header';
+import Checkout from './Components/Checkout';
 
 const RouteSwitch = () => {
     return(
@@ -14,6 +15,7 @@ const RouteSwitch = () => {
             <Route path="/store/" element={<Homepage />} />
             <Route path="/product/:id" element={<ProductPage />} />
             <Route path="/cart/" element={<Cart />} /> 
+            <Route path="/checkout" element={<Checkout />} />
         </Routes>
     );
 }

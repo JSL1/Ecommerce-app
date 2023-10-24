@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useNavigate } from 'react-router-dom';
 import Footer from "./Footer";
 import virtue from '../images/VIRTUE.png';
+import settings from "../Data/storeSettings";
 
 const LandingPage = () => {
     const navigate = useNavigate();
@@ -9,7 +10,7 @@ const LandingPage = () => {
         <>
             <main id="landing-page-content">
                 <div id="landing-page-logo">
-                    <span class="LogoLG">BargainMercheant</span>
+                    <span class="LogoLG">{settings.storeName}</span>
                 </div>
                 <section className="landing-section" id="one">
                     <div className="landing-section-content">

@@ -1,0 +1,109 @@
+.headline {
+    text-align: center;
+}
+#cart-main {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 40vh;
+}
+
+.cart-card {
+    width: 80vw;
+    height: 200px;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    margin: 0px;
+    border-bottom: 1px solid #111111;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lato', sans-serif;
+}
+
+.cart-card-body { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cart-cart-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cart-card-img {
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+}
+.cart-card-img img {
+    width: 200px;
+    height: 100%;
+}
+
+.cart-card-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.close-button, .close-button:hover, .close-button:active {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    color: #CCCCCC;
+    background-color: #f1f1f1;
+}
+
+.update-button, .update-button:hover, .update-button:active {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    color: #CCCCCC;
+    background-color: #f1f1f1;
+}
+
+.cart-card-info h2 {
+    text-transform: uppercase;
+}
+.cart-card-price span {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#cart-total-checkout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+    background-color: #f1f1f1;
+    color: #111111;
+    margin-bottom: 1rem;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#cart-total-checkout div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+#cart-total-checkout span {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 6px 0px 6px 6px;
+}
+
+#cart-total-checkout button {
+    width: 200px;
+    background-color: #DFE979;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    border-radius: 6px;
+    border: none;
+    padding: 12px;
+}

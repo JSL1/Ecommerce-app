@@ -2,9 +2,12 @@ import React, { Component } from "react";
 import '../css/product-card.css';
 import {Link, useNavigate} from 'react-router-dom';
 import products from "../Data/productsList";
+import { useDispatch } from "react-redux";
+import cart, { add } from '../redux/cart';
 
 const ProductCard = (props) => {
     const product = props.product;
+    const dispatch = useDispatch();
     return (
         <>
             <div className="product-card">
@@ -23,8 +26,23 @@ const ProductCard = (props) => {
                     </div>
                     <div className="product-info">
                         <p>{product.description}</p>
-                        
-                        <button>Add to cart</button>             
+
+                        <button onClick={
+                            () => dispatch(add({
+                                id: product.id,
+                                name: product.name,
+                                category: product.category,
+                                manufacturer: product.manufacturer,
+                                price: product.price,
+                                description: product.description,
+                                images: [...product.images],
+                                quantity: 1,
+                                inStock: product.inStock,
+                                })
+                            )
+                        }>
+                            Add to cart
+                        </button>             
                     </div>
                 </div>
             </div>

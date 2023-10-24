@@ -22,8 +22,8 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  margin-top: 4rem;
+.page {
+  padding-top: 8rem;
   background-color: #DF8E78;
 }
 

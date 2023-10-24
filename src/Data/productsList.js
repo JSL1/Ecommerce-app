@@ -18,7 +18,7 @@ import sabbathShirt from '../images/productImg/sabbathshirt.jpg';
 
 const products = [
     {
-        id: uniqid(),
+        id: 'lo4ivr84',
         name: 'Cool Backpack',
         category: 'Bags',
         manufacturer: 'Vandelet Ind.',
@@ -28,7 +28,7 @@ const products = [
         inStock: 7,
     },
     {
-        id: uniqid(),
+        id: 'lo4iy0pp',
         name: 'Edgy Backpack',
         category: 'Bags',
         manufacturer: 'Jose and Sons',
@@ -38,7 +38,7 @@ const products = [
         inStock: 10,
     },
     {
-        id: uniqid(),
+        id: 'lo4iyaax',
         name: 'Black Sabbat Vol 4 T-Shirt Vintage',
         category: 'Shirts',
         manufacturer: 'Black Sabbath, warner records',
@@ -48,7 +48,7 @@ const products = [
         inStock: 10,
     },
     {
-        id: uniqid(),
+        id: 'lo4iylrf',
         name: 'Elden Ring Video Game Shirt',
         category: 'Shirts',
         manufacturer: 'MyersExst., BandaiNamco',
@@ -58,7 +58,7 @@ const products = [
         inStock: 10,
     },
     {
-        id: uniqid(),
+        id: 'lo4iywlo',
         name: 'Glowing Lava Lamp',
         category: 'Accessories',
         manufacturer: 'Johnny\'s Lamps',
@@ -68,7 +68,7 @@ const products = [
         inStock: 10,
     },
     {
-        id: uniqid(),
+        id: 'lo4izc7z',
         name: 'Nurses T Shirt',
         category: 'Shirts',
         manufacturer: 'Myers Exst.',

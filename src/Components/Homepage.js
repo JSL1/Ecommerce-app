@@ -7,7 +7,7 @@ const Homepage = () => {
     return (
         <>
             <Header />
-                <main>
+                <main className='page'>
                     <ProductView />
                 </main>
             <Footer />
