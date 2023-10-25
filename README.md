@@ -1,6 +1,11 @@
 # Bargain Mercheant
 
-BargainMercheant (or BrgnMrchnt) is a canned e-commerce solution. Simply pull the repository and deploy it to your own website (https://dev.to/crishanks/deploy-host-your-react-app-with-cpanel-in-under-5-minutes-4mf6).
+BargainMercheant (or BrgnMrchnt) is a canned e-commerce solution. Simply pull the repository and deploy it to your own website 
+
+https://dev.to/crishanks/deploy-host-your-react-app-with-cpanel-in-under-5-minutes-4mf6
+
+https://blog.logrocket.com/8-ways-deploy-react-app-free/
+
 
 ## Technologies Used
 ```
