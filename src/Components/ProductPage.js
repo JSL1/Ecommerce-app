@@ -69,10 +69,10 @@ const ProductPage = (props) => {
                     <img src={currentImage} alt={product.name + ', ' + product.description} />
                 </div>
                 <div id="product-page-body">
-                <Link to="/store">
-                    <span class="material-symbols-outlined">arrow_back</span>Back to the shop..
-                </Link>
                     <div className="product-page-name">
+                        <Link to="/store">
+                            <span class="material-symbols-outlined">arrow_back</span>Back to the shop..
+                        </Link>
                         <span className="product-page-h1">
                             {product.name}
                         </span>
@@ -83,7 +83,6 @@ const ProductPage = (props) => {
                             {product.category}, {product.id}
                         </span>
                     </div>
-                    <div className="product-page-info">
                         <div>
                             <p>{product.description}</p>
                         </div>
@@ -96,7 +95,7 @@ const ProductPage = (props) => {
                                 ))
                             }
                         </div>
-                    </div>
+                    
                     <div className="product-page-buy">
                         <div>
                             <button className="increment-decrement" onClick={decrementQuantity}>

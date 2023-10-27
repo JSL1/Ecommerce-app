@@ -20,8 +20,8 @@ export const cartSlicer = createSlice({
     reducers: {
         add: (state, action) => {
             let existingIndex = searchArray(state.contents, action.payload.id);
-            if (existingIndex) {
-                state.contents = [...state.contents, state.contents[existingIndex].quantity += action.payload.quantity];
+            if (existingIndex !== false) {
+                state.contents[existingIndex].quantity += action.payload.quantity;
             } else {
                 state.contents = [...state.contents, action.payload];
             }

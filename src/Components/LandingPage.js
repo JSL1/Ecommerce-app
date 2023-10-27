@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
 import Footer from "./Footer";
 import virtue from '../images/VIRTUE.png';
 import settings from "../Data/storeSettings";
+import OrderSubmitted from "./OrderSubmitted";
 
-const LandingPage = () => {
+const LandingPage = (props) => {
+
+    const [showConfirmation, setShowConfirmation] = useState(props.confirmed);
+
+    const showHideConfirmation = () => {
+        setShowConfirmation(!showConfirmation);
+    }
+
     const navigate = useNavigate();
     return (
         <>
@@ -12,6 +20,7 @@ const LandingPage = () => {
                 <div id="landing-page-logo">
                     <span class="LogoLG">{settings.storeName}</span>
                 </div>
+                {showConfirmation && <OrderSubmitted func={showHideConfirmation} />}
                 <section className="landing-section" id="one">
                     <div className="landing-section-content">
                         <div>

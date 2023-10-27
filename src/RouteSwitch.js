@@ -11,7 +11,8 @@ import Checkout from './Components/Checkout';
 const RouteSwitch = () => {
     return(
         <Routes>
-            <Route path="/" element={<LandingPage />} />
+            <Route path="/" element={<LandingPage confirmed={false} />} />
+            <Route path='/orderconfirmed' element={<LandingPage confirmed={true} />} />
             <Route path="/store/" element={<Homepage />} />
             <Route path="/product/:id" element={<ProductPage />} />
             <Route path="/cart/" element={<Cart />} /> 

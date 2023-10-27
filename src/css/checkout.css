@@ -72,6 +72,10 @@
     flex-direction: row;
 }
 
+.cart-summary-total span {
+    display: block;
+}
+
 #submit-checkout {
     width: 50%;
     line-height: 1.5rem;
@@ -82,4 +86,29 @@
     background-color: #A5F278;
     margin: 1rem auto;
 
+}
+#payment {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#payment span {
+    display: block;
+}
+
+.pay-option {
+    
+}
+
+#payment-paypal, #payment-mastercard {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    border: 1px solid #DFBF77;
+    border-radius: 6px;
+    padding: 1rem 0px 1rem 0px;
 }

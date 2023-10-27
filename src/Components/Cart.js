@@ -9,7 +9,11 @@ import { useNavigate } from "react-router-dom";
 import '../css/cart-card.css';
 
 const Cart = () => {
-    const [ moneyTotal, setMoneyTotal] = useState(0);
+    const [ totals, setTotals] = useState({
+        moneyTotal: 0,
+        afterTax: 0,
+        grandTotal: 0,
+    });
     const { contents, total } = useSelector((state) => state.cart);
     const [cartContents, setCartContents] = useState(contents);
     const dispatch = useDispatch();
@@ -21,16 +25,20 @@ const Cart = () => {
     const getSubTotal = () => {
         let tot = 0;
         for(let i = 0; i < contents.length; i++) {
-            tot += contents[i].price * contents[i].quantity;
+            tot += (contents[i].price * contents[i].quantity);
         }
-        return tot;
+        return Math.round(tot * 100) / 100;
     }
 
     useEffect(() => {
-        setMoneyTotal(getSubTotal());
+        setTotals({
+            moneyTotal: getSubTotal(),
+            afterTax: Math.round((getSubTotal() * settings.taxRate) * 100) / 100,
+            grandTotal: Math.round((getSubTotal() + (getSubTotal() * settings.taxRate) + settings.shippingFee) * 100) / 100,
+        })
         refreshCart();
-        dispatch(updatetotal(moneyTotal));
-    }, [getSubTotal, moneyTotal]);
+        dispatch(updatetotal(totals.moneyTotal));
+    }, [getSubTotal, totals]);
 
     const navigate = useNavigate();
 
@@ -47,10 +55,10 @@ const Cart = () => {
                     ))}
                     <article id="cart-total-checkout">
                         <div>
-                            <span>Subotal: <b>${moneyTotal}</b></span>
-                            <span>GST/HST: <b>${moneyTotal * settings.taxRate}</b></span>
+                            <span>Subotal: <b>${totals.moneyTotal}</b></span>
+                            <span>GST/HST: <b>${totals.afterTax}</b></span>
                             <span>Shipping: <b>${settings.shippingFee}</b></span>
-                            <span>Total: <b>${moneyTotal + (moneyTotal * settings.taxRate) + settings.shippingFee}</b></span>
+                            <span>Total: <b>${totals.grandTotal}</b></span>
                         </div>
                         <div>
                             <button onClick={() => navigate('/checkout')}>Checkout</button>

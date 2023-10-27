@@ -23,9 +23,9 @@ const {contents, total } = useSelector((state) => state.cart);
                 ))}
                 <div className="cart-summary-total">
                     <span>Subotal: <b>${moneyTotal}</b></span>
-                    <span>GST/HST: <b>${moneyTotal * settings.taxRate}</b></span>
+                    <span>GST/HST: <b>${Math.round((moneyTotal * settings.taxRate) * 100) / 100}</b></span>
                     <span>Shipping: <b>${settings.shippingFee}</b></span>
-                    <span>Total: <b>${moneyTotal + (moneyTotal * settings.taxRate) + settings.shippingFee}</b></span>
+                    <span>Total: <b>${Math.round((moneyTotal + (moneyTotal * settings.taxRate) + settings.shippingFee) * 100) / 100}</b></span>
                 </div>  
             </div>
         </>
