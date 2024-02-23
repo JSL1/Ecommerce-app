@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dc2e6406.css",
+    "main.js": "/static/js/main.48e226cc.js",
+    "static/js/787.0c1a86ef.chunk.js": "/static/js/787.0c1a86ef.chunk.js",
+    "static/media/guy_outside.jpg": "/static/media/guy_outside.89165d168022cbaa4172.jpg",
+    "static/media/nurseshirt.jpg": "/static/media/nurseshirt.1b32a21274598368afb1.jpg",
+    "static/media/record_shopping.jpg": "/static/media/record_shopping.2ae65de0590326847ef8.jpg",
+    "static/media/eldenshirtfront.jpg": "/static/media/eldenshirtfront.9da3166405dd86c1c3ac.jpg",
+    "static/media/eldenshirt.jpg": "/static/media/eldenshirt.346ea18d017fff2f19dd.jpg",
+    "static/media/Rakoon.ttf": "/static/media/Rakoon.bef397870ba25b026be6.ttf",
+    "static/media/otherbackpack.webp": "/static/media/otherbackpack.69b1ff100b0a2e5cdac8.webp",
+    "static/media/VIRTUE.png": "/static/media/VIRTUE.ea6375bf471e540327c0.png",
+    "static/media/backpack3.jpg": "/static/media/backpack3.58f0db0073f7a8131190.jpg",
+    "static/media/backpack4.jpg": "/static/media/backpack4.9311ca9bea9a5c7b8b37.jpg",
+    "static/media/sabbathshirt.jpg": "/static/media/sabbathshirt.39ea7bf0aa2245fc4914.jpg",
+    "static/media/backpack1.jpg": "/static/media/backpack1.aa97ff7e7ff5125304e9.jpg",
+    "static/media/backpack2.webp": "/static/media/backpack2.0e254dcd7925c2387131.webp",
+    "static/media/otherbackpack2.webp": "/static/media/otherbackpack2.6b3ebe931f99ef8e1f6e.webp",
+    "static/media/otherbackpack3.webp": "/static/media/otherbackpack3.f1db08641f3abd8620f9.webp",
+    "static/media/lavalamp.webp": "/static/media/lavalamp.5d134fca669bd734f88d.webp",
+    "static/media/lavalamp2.webp": "/static/media/lavalamp2.ef7576fbf1845cc64903.webp",
+    "index.html": "/index.html",
+    "main.dc2e6406.css.map": "/static/css/main.dc2e6406.css.map",
+    "main.48e226cc.js.map": "/static/js/main.48e226cc.js.map",
+    "787.0c1a86ef.chunk.js.map": "/static/js/787.0c1a86ef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc2e6406.css",
+    "static/js/main.48e226cc.js"
+  ]
+}
